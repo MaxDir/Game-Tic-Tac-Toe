@@ -57,12 +57,11 @@ while Game:
             print('[Ошибка] Выберите число от 0 до 8')
     # Ход Компьютера
     while True:
-        ai_box = random_number()
-        if boxes[ai_box] == ' ':
+        if boxes[random_number()] == ' ':
             if user_symbol == 'X':
-                boxes[ai_box] = 'O'
+                boxes[random_number()] = 'O'
             elif user_symbol == 'O':
-                boxes[ai_box] = 'X'
+                boxes[random_number()] = 'X'
             break
 
     playing_field()
